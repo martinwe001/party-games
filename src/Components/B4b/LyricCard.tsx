@@ -40,14 +40,32 @@ export function LyricCard({
         h={"200px"}
       >
         <Paper withBorder className="flip-card-inner">
-          <Stack className="flip-card-front">
-            <Text size="50px" fw={"bolder"} c={"black"}>
+          <Stack
+            className="flip-card-front"
+            style={{
+              backgroundImage: `url(https://t3.ftcdn.net/jpg/02/72/67/96/360_F_272679601_ReiKAFUY1xf9XituWgjkkrpTnxqrPlMh.jpg)`,
+            }}
+          >
+            <Text size="100px" fw={"bolder"} className="lyric-number">
               {number}
             </Text>
           </Stack>
 
-          <Flex className={`flip-card-back`} bg={isBomb ? "red" : "white"}>
-            <Text size="50px" fw={"bolder"} c={"black"}>
+          <Flex
+            className={`flip-card-back`}
+            style={{
+              backgroundImage: isBomb
+                ? ""
+                : `url(https://t3.ftcdn.net/jpg/02/72/67/96/360_F_272679601_ReiKAFUY1xf9XituWgjkkrpTnxqrPlMh.jpg)`,
+              backgroundColor: isBomb ? "red" : "",
+            }}
+          >
+            <Text
+              size="50px"
+              fw={"bolder"}
+              className="lyric-number1"
+              c={isBomb ? "white" : "#033382"}
+            >
               {lyric}
             </Text>
           </Flex>

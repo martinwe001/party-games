@@ -38,7 +38,11 @@ export function JeopardyBox({
         </Stack>
 
         <Flex className={`flip-card-back1`}>
-          <Text size={isCategory ? "30px" : "20px"} fw={"bolder"}>
+          <Text
+            size={isCategory ? "30px" : "20px"}
+            fw={"bolder"}
+            //c={isCategory ? "white" : ""}
+          >
             {question}
           </Text>
         </Flex>

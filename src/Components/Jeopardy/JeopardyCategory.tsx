@@ -7,7 +7,7 @@ export type QuestionNumber = 1 | 2 | 3 | 4 | 5;
 export function JeoparyCategory({ category }: { category: Category }) {
   return (
     <Flex w={"200px"}>
-      <Grid gutter={0}>
+      <Grid gutter={"xs"} bg={"black"}>
         <Grid.Col>
           <JeopardyBox
             imageSrc="200.webp"

@@ -17,6 +17,8 @@ export function JeopardyRoutes() {
           backgroundImage: `url(https://www.buzzerblog.com/wp-content/uploads/2014/09/Jeopardy_S31_A_HD_14_15-1180x528.png)`,
           backgroundSize: "contain",
         }}
+        align={"center"}
+        justify={"center"}
       >
         <Routes>
           <Route path="/" element={<Jeopardy />} />

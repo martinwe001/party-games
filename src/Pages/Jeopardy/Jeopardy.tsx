@@ -22,7 +22,7 @@ export function Jeopardy() {
             c={"black"}
             bg={"white"}
           >
-            Start spillet, {jeopardy ? jeopardy.categories.length : 0}
+            Start spillet, {jeopardy ? jeopardy.categories.length : 0}{" "}
             kategorier lagt til
           </Button>
           <Button onClick={() => navigate("/")} c={"black"} bg={"white"}>

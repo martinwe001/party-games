@@ -1,4 +1,4 @@
-import { Button, Flex, Stack, Text } from "@mantine/core";
+import { Button, Flex, Stack } from "@mantine/core";
 import { useState } from "react";
 import { MdChevronLeft } from "react-icons/md";
 import { useNavigate } from "react-router";
@@ -45,14 +45,10 @@ export function B4bGame() {
           leftSection={<MdChevronLeft />}
           onClick={() => navigate("/b4b")}
           variant="transparent"
+          c={"white"}
         >
           Tilbake
         </Button>
-      </Flex>
-      <Flex justify={"center"}>
-        <Text size="50px" c={"white"} fw={"bolder"}>
-          Lag {activeTeam} sin tur!
-        </Text>
       </Flex>
       {songs.length > 0 ? (
         <Flex justify={"center"}>
@@ -68,7 +64,9 @@ export function B4bGame() {
         <Button>Legg til sanger!</Button>
       )}
       <Flex justify={"flex-end"} p={"lg"}>
-        <Button onClick={handleGoNext}>Neste sang</Button>
+        <Button onClick={handleGoNext} variant="transparent" c={"white"}>
+          Neste sang
+        </Button>
       </Flex>
     </Stack>
   );

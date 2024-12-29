@@ -3,6 +3,7 @@
   width: 200px;
   height: 300px;
   color: white;
+  border: 0;
 }
 
 .flip-card-inner {
@@ -12,6 +13,7 @@
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  border: 0;
 }
 
 .flip-card-front,
@@ -24,16 +26,27 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 0;
 }
 
 .flip-card-front {
   color: black;
+  border: 0;
 }
 
 .flip-card-back {
   transform: rotateY(180deg);
+  border: 0;
 }
 
 .flipped .flip-card-inner {
   transform: rotateY(180deg);
+  border: 0;
+}
+.lyric-number {
+  color: #033382;
+  text-shadow: 5px 5px 0px black;
+}
+.lyric-number1 {
+  text-shadow: 3px 3px 0px black;
 }
