@@ -65,7 +65,7 @@ export function B4bGame() {
           />
         </Flex>
       ) : (
-        <Button>Legg til sanger</Button>
+        <Button>Legg til sanger!</Button>
       )}
       <Flex justify={"flex-end"} p={"lg"}>
         <Button onClick={handleGoNext}>Neste sang</Button>
