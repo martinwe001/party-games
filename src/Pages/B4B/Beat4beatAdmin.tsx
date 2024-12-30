@@ -1,4 +1,4 @@
-import { Button, Flex, Stack } from "@mantine/core";
+import { Button, Stack } from "@mantine/core";
 import { MdChevronLeft } from "react-icons/md";
 import { useNavigate } from "react-router";
 import { B4bForm } from "../../Components/B4b/B4bForm";
@@ -10,19 +10,21 @@ export function Beat4beatAdmin() {
   const navigate = useNavigate();
   return (
     <Stack w={"100vw"} justify={"center"} bg={"white"}>
-      <Flex justify={"flex-start"} p={"lg"}>
-        <Button
-          onClick={() => navigate("/b4b")}
-          variant="subtle"
-          leftSection={<MdChevronLeft />}
-        >
-          Tilbake
-        </Button>
-      </Flex>
+      <Button
+        style={{ position: "absolute", top: "1rem", left: "1rem" }}
+        c={"black"}
+        variant="transparent"
+        leftSection={<MdChevronLeft />}
+        onClick={() => navigate("/b4b")}
+      >
+        Tilbake
+      </Button>
       <Stack justify="center" align="center">
-        {songs.map((song) => (
-          <SongComponent song={song} />
-        ))}
+        <Stack style={{ overflow: "scroll", height: "60%" }}>
+          {songs.map((song) => (
+            <SongComponent song={song} />
+          ))}
+        </Stack>
 
         <B4bForm />
       </Stack>
