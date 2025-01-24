@@ -39,7 +39,7 @@ export function JeopardyBox({
 
         <Flex className={`flip-card-back1`}>
           <Text
-            size={isCategory ? "30px" : "20px"}
+            size={isCategory ? "30px" : question.length < 12 ? "40px" : "20px"}
             fw={"bolder"}
             //c={isCategory ? "white" : ""}
           >
