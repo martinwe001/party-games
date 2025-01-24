@@ -1,4 +1,4 @@
-import { Button, Flex, Stack, TextInput } from "@mantine/core";
+import { Button, Flex, Stack, Textarea, TextInput } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { v4 as uuidv4 } from "uuid";
 import { useJeopardy } from "../../hooks/useJeopardy";
@@ -37,7 +37,7 @@ export function JeopardyForm() {
 
   return (
     <Stack mt={"lg"}>
-      <Stack gap={"md"}>
+      <Stack gap={"xs"}>
         <TextInput
           withAsterisk
           label="Navn på kategori"
@@ -45,37 +45,42 @@ export function JeopardyForm() {
           key={jeopardyform.key("name")}
           {...jeopardyform.getInputProps("name")}
         />
-        <TextInput
+        <Textarea
           withAsterisk
           label="Spørsmål 1"
+          autosize
           placeholder="Spørsmål"
           key={jeopardyform.key("question1")}
           {...jeopardyform.getInputProps("question1")}
         />
-        <TextInput
+        <Textarea
           withAsterisk
           label="Spørsmål 2"
+          autosize
           placeholder="Spørsmål"
           key={jeopardyform.key("question2")}
           {...jeopardyform.getInputProps("question2")}
         />
-        <TextInput
+        <Textarea
           withAsterisk
           label="Spørsmål 3"
+          autosize
           placeholder="Spørsmål"
           key={jeopardyform.key("question3")}
           {...jeopardyform.getInputProps("question3")}
         />
-        <TextInput
+        <Textarea
           withAsterisk
           label="Spørsmål 4"
+          autosize
           placeholder="Spørsmål"
           key={jeopardyform.key("question4")}
           {...jeopardyform.getInputProps("question4")}
         />
-        <TextInput
+        <Textarea
           withAsterisk
           label="Spørsmål 5"
+          autosize
           placeholder="Spørsmål"
           key={jeopardyform.key("question5")}
           {...jeopardyform.getInputProps("question5")}

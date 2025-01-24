@@ -39,7 +39,13 @@ export function JeopardyBox({
 
         <Flex className={`flip-card-back1`}>
           <Text
-            size={isCategory ? "30px" : question.length < 12 ? "40px" : "20px"}
+            size={
+              isCategory
+                ? "30px"
+                : question.length < 12
+                ? "40px"
+                : fontSize(question)
+            }
             fw={"bolder"}
             //c={isCategory ? "white" : ""}
           >
@@ -49,4 +55,8 @@ export function JeopardyBox({
       </Paper>
     </Flex>
   );
+}
+
+export function fontSize(question: string): string {
+  return question.length < 40 ? "20px" : question.length > 60 ? "12px" : "15px";
 }

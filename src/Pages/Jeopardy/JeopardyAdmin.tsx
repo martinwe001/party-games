@@ -26,7 +26,7 @@ export function JeopardyAdmin() {
       >
         Tilbake
       </Button>
-      <Stack bg={"white"} p={"lg"} h={"100%"}>
+      <Stack bg={"white"} p={"lg"} h={"100%"} style={{ overflowY: "scroll" }}>
         <Text>Jeopardy admin</Text>
         <JeopardyForm />
       </Stack>
