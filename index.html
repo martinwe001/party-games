@@ -4,8 +4,8 @@
     <script src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz"></script>
     <script src="https://cdn.amplitude.com/libs/plugin-session-replay-browser-1.8.0-min.js.gz"></script>
     <script>
-      if(import.meta.env.VITE_ENV === 'PRODUCTION'){
-        console.log(import.meta.env.VITE_ENV)
+      if ("%VITE_ENV%" === "PRODUCTION") {
+        console.log("%VITE_ENV%");
         window.amplitude.add(window.sessionReplay.plugin({ sampleRate: 1 }));
         window.amplitude.init("1eb7cd469cd6a7ab3fe4a4266864fddf", {
           autocapture: { elementInteractions: true },
