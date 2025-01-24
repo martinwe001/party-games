@@ -61,7 +61,7 @@ export function LyricCard({
             }}
           >
             <Text
-              size="50px"
+              size={lyric.length > 7 ? "40px" : "50px"}
               fw={"bolder"}
               className="lyric-number1"
               c={isBomb ? "white" : "#033382"}
