@@ -44,8 +44,8 @@ export function B4bGame() {
         <Button
           leftSection={<MdChevronLeft />}
           onClick={() => navigate("/b4b")}
-          variant="transparent"
-          c={"white"}
+          c={"black"}
+          bg={"white"}
         >
           Tilbake
         </Button>
@@ -64,7 +64,7 @@ export function B4bGame() {
         <Button>Legg til sanger!</Button>
       )}
       <Flex justify={"flex-end"} p={"lg"}>
-        <Button onClick={handleGoNext} variant="transparent" c={"white"}>
+        <Button onClick={handleGoNext} c={"black"} bg={"white"}>
           Neste sang
         </Button>
       </Flex>
