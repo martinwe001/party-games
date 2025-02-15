@@ -25,6 +25,9 @@ export function GameSelectorPage() {
         <Button onClick={() => navigate("/jeopardy")} bg={"white"} c={"black"}>
           Jeopardy!
         </Button>
+        <Button onClick={() => navigate("/horserace")} bg={"white"} c={"black"}>
+          Hesteveddeløp
+        </Button>
       </Flex>
     </Stack>
   );
