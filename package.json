@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "watch": "tsc --watch --noEmit --project './tsconfig.json'",
     "lint": "eslint .",
     "preview": "vite preview"
   },
