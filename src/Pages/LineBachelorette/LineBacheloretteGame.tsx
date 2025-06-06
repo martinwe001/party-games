@@ -1,7 +1,7 @@
 import { Button, Flex } from "@mantine/core";
 import { MdChevronLeft } from "react-icons/md";
 import { useNavigate } from "react-router";
-import { JeoparyCategory } from "../../Components/Jeopardy/JeopardyCategory";
+import { LineCategory } from "../../Components/Jeopardy/LineCategory";
 import { useJeopardy } from "../../hooks/useJeopardy";
 
 export function LineBacheloretteGame() {
@@ -20,7 +20,7 @@ export function LineBacheloretteGame() {
       </Button>
       <Flex gap={"xs"} align={"center"} justify={"center"} bg={"black"}>
         {jeopardy.categories.map((cat) => (
-          <JeoparyCategory category={cat} />
+          <LineCategory category={cat} />
         ))}
       </Flex>
     </Flex>
