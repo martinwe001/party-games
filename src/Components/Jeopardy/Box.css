@@ -52,7 +52,7 @@
   transform: rotateY(180deg);
   color: #ed9226;
   background-color: #ff40ff;
-  text-shadow: 3px 3px 0px black;
+  text-shadow: 1px 2px 0px black;
   border: 0;
 }
 
