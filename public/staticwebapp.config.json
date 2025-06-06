@@ -1,12 +1,14 @@
 {
-    "navigationFallback": {
-        "rewrite": "/index.html",
-        "exclude": [
-            "/static/media/*.{png,jpg,jpeg,gif,bmp}",
-            "/static/css/*"
-        ]
-    },
-    "mimeTypes": {
-        ".json": "text/json"
-    }
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/static/media/*.{png,jpg,jpeg,gif,bmp}", "/static/css/*"]
+  },
+  "mimeTypes": {
+    ".json": "text/json",
+    ".jsx": "application/javascript",
+    ".tsx": "application/javascript",
+    ".js": "application/javascript",
+    ".mjs": "application/javascript",
+    ".ts": "application/javascript"
+  }
 }
