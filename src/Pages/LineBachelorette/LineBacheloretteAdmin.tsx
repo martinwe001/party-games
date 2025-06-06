@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import { JeopardyForm } from "../../Components/Jeopardy/JeopardyForm";
 import { useJeopardy } from "../../hooks/useJeopardy";
 
-export function JeopardyAdmin() {
+export function LineBacheloretteAdmin() {
   const { jeopardy, setJeopardy } = useJeopardy();
   const navigate = useNavigate();
 

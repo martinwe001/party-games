@@ -7,6 +7,7 @@ import { GameOver } from "./Pages/GameOver";
 import { GameSelectorPage } from "./Pages/GameSelectorPage";
 import { HorseRace } from "./Pages/HorseRace/HorseRace";
 import { JeopardyRoutes } from "./Pages/Jeopardy/JeopardyRoutes";
+import { LineBacheloretteRoutes } from "./Pages/LineBachelorette/LineBacheloretteRoutes";
 
 export default function App() {
   const location = useLocation();
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="*" element={<GameSelectorPage />} />
         <Route path="/b4b/*" element={<Beat4beatRoutes />} />
         <Route path="/jeopardy/*" element={<JeopardyRoutes />} />
+        <Route path="/line/*" element={<LineBacheloretteRoutes />} />
         <Route path="/horserace/*" element={<HorseRace />} />
         <Route path="/gameOver" element={<GameOver />} />
       </Routes>
