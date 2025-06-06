@@ -22,7 +22,7 @@ export function JeopardyAdmin() {
         variant="transparent"
         c={"white"}
         leftSection={<MdChevronLeft />}
-        onClick={() => navigate("/line")}
+        onClick={() => navigate("/jeopardy")}
       >
         Tilbake
       </Button>

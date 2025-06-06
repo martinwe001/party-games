@@ -1,10 +1,8 @@
 import { Button, Flex, Stack, Title } from "@mantine/core";
 import { useNavigate } from "react-router-dom";
-import { useJeopardy } from "../../hooks/useJeopardy";
 import "./line.css";
 
 export function LineBachelorette() {
-  const { jeopardy } = useJeopardy();
   const navigate = useNavigate();
 
   return (
